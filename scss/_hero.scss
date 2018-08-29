@@ -1,0 +1,61 @@
+// Styling for the masthead
+header.hero {
+  text-align: center;
+  color: $brand-green;
+  // background-color: $brand-green;
+  background-image: url('../img/melissastephen-hero.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center bottom;
+  @include background-cover;
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    .intro-tagline {
+      font-size: 16px;
+      padding: 15px 15px;
+      font-style: italic;
+      line-height: 22px;
+      color: $purple!important;
+      @include serif-font;
+    }
+    .intro-heading {
+      padding: 5px;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 40px;
+      @include heading-font;
+    }
+    .intro-list{
+      padding: 15px;
+    }
+  }
+}
+@media(min-width:768px) {
+  header.hero {
+    .intro-text {
+      padding-top: 120px;
+      padding-bottom: 100px;
+      .intro-tagline {
+        font-size: 24px;
+        padding: 3px 0;
+        font-style: italic;
+        line-height: 40px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 18px;
+        padding: 10px 0;
+        font-weight: 500;
+        line-height: 30px;
+        @include heading-font;
+      }
+      .firstName{
+        @include script-font;
+        font-size: 40px;
+        padding: 0;
+        line-height: 30px;
+      }
+    }
+  }
+}

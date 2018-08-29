@@ -1,0 +1,31 @@
+@import url("https://use.typekit.net/ylu5wzs.css"); //Bebas Neue
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.wedding {
+    background: url('./../img/melissastephen-hero.jpg') no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+.text-blue{
+    // top: px;
+    display: flex;
+    z-index: 100;
+    margin: auto; 
+}
+.wedding-text{
+    background-color: #283c5cbf;
+    color: white;
+    padding: .5em;
+    line-height: 1.2em;
+}
+
+.title{
+    font-size: 30px;
+}

@@ -1,0 +1,15 @@
+// Styling for the footer
+@import "variables.scss";
+
+footer {
+  background-color: $brand-green;
+  color: $mist;
+  padding: 25px 2rem;
+  display: flex;
+  .copyright {
+    font-size: 90%;
+    line-height: 40px;
+    text-transform: none;
+    @include heading-font;
+  }
+}

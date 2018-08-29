@@ -1,0 +1,22 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+
+// Global CSS
+@import "global.scss";
+
+// Components
+@import "navbar.scss";
+@import "hero.scss";
+@import "timeline.scss";
+@import "footer.scss";
+
+//WEDDING
+@import 'wedding.scss';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,185 @@
+@import "variables.scss";
+
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $dark-blue !important;
+}
+
+.icon-circle {
+  color: $dark-blue !important;
+}
+
+.mw-card{
+  padding: 2rem;
+  background-color: $purple;
+  color: $white!important;
+}
+
+h1,
+h2,
+h3,
+h5
+{
+  font-weight: 700;
+  color: $brand-green;
+  @include heading-font;
+}
+
+h4 {
+  font-weight: 700;
+  color: $sky-blue;
+  font-style: italic;
+  @include serif-font;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 20px;
+  color: $primary;
+  text-transform: uppercase;
+  @include heading-font;
+}
+
+
+section {
+  padding: 80px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 50px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+@media(min-width:768px) {
+  section {
+    padding: 80px 0;
+  }
+}
+
+// Button Styles
+.btn {
+  @include heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 10px 40px;
+}
+
+.btn-primary {
+  background-color: $purple;
+  border-color: $purple;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($purple, 7.5%) !important;
+    border-color: darken($purple, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(107, 54, 122, 0.5) !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $dark-blue;
+  border-color: $dark-blue;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: lighten($dark-blue, 7.5%) !important;
+    border-color: lighten($dark-blue, 7.5%) !important;
+    color: $white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(107, 54, 122, 0.5) !important;
+  }
+}
+
+.btn a{
+  color: $white;
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+.bg-light{
+  background-color: $mist !important;
+}
+
+.bg-secondary{
+  background-color: #e0e0e0 !important;
+}
+
+.btn-outline-primary{
+  color: $brand-green;
+  border-color: $brand-green;
+}
+
+.btn-outline-primary a{
+  color: $brand-green;
+}
+
+.btn-outline-primary:hover{
+    color: $white!important;
+    background-color: $brand-green;
+    border-color: $brand-green;
+}
+
+.btn-outline-primary a:hover{
+  color: $white!important;
+  text-decoration: none;
+}
+
+.btn-outline-secondary{
+  color: $purple;
+  border-color: $purple;
+}
+
+.btn-outline-secondary:hover{
+    color: $white;
+    background-color: $purple;
+    border-color: $purple;
+}
